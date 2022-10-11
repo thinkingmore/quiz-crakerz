@@ -8,6 +8,7 @@ import Qgit from './components/Quiz/Qgit/Qgit';
 import Qrct from './components/Quiz/Qrct/Qrct';
 import Blogs from './components/Blogs/Blogs';
 import NotFound from './components/notFound';
+import Stats from './components/Stats';
 
 
 function App() {
@@ -45,6 +46,10 @@ function App() {
           path: 'git',
           loader: () => fetch('https://openapi.programming-hero.com/api/quiz/5'),
           element: <Qgit></Qgit>
+        },
+        {
+          path:'stats',
+          element:<Stats></Stats>
         },
         {
           path: '*',
