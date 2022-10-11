@@ -7,6 +7,8 @@ const Home = () => {
     const quizes = useLoaderData();
     console.log(quizes);
 
+   
+
     return (
         <div className='quize-container'>
             {
