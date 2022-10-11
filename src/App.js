@@ -2,10 +2,10 @@ import './App.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Main from '../src/components/layouts/Main'
 import Home from '../src/components/Home/Home'
-import Qreact from './components/Quiz/Qreact/Qreact';
 import Qjavascript from './components/Quiz/Qjavascript/Qjavascript';
 import Qcss from './components/Quiz/Qcss/Qcss';
 import Qgit from './components/Quiz/Qgit/Qgit';
+import Qrct from './components/Quiz/Qrct/Qrct';
 
 
 function App() {
@@ -21,19 +21,20 @@ function App() {
         element:<Home></Home>
         },
         {
-          path:'/qreact',
-          element:<Qreact></Qreact>
+          path:'React',
+          loader: () => fetch('https://openapi.programming-hero.com/api/quiz/1'),
+          element: <Qrct></Qrct>
         },
         {
-          path: 'qjavascript',
+          path: 'javascript',
           element: <Qjavascript></Qjavascript>
         },
         {
-          path: 'qcss',
+          path: 'css',
           element:<Qcss></Qcss>
         },
         {
-          path: 'qgit',
+          path: 'git',
           element: <Qgit></Qgit>
         }
           

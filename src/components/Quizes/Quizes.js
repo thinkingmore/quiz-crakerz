@@ -11,7 +11,7 @@ const Quizes = (quize) => {
             <p>Quize:{id}</p>
             <p>Total quizes:{total}</p>
             <button className="card-btn">
-                {<Link to={`Q${name}`}>{name}</Link>}
+                {<Link to={`${name}`}>{name}</Link>}
             </button>
         </div>         
     );
