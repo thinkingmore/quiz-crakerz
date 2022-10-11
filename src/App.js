@@ -27,14 +27,17 @@ function App() {
         },
         {
           path: 'javascript',
+          loader: () => fetch('https://openapi.programming-hero.com/api/quiz/2'),
           element: <Qjavascript></Qjavascript>
         },
         {
           path: 'css',
+          loader: () => fetch('https://openapi.programming-hero.com/api/quiz/4'),
           element:<Qcss></Qcss>
         },
         {
           path: 'git',
+          loader: () => fetch('https://openapi.programming-hero.com/api/quiz/5'),
           element: <Qgit></Qgit>
         }
           

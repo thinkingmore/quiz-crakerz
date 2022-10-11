@@ -1,0 +1,9 @@
+.quiz {
+    width:80%;
+    margin: auto;
+    text-align: left;
+}
+
+.quiz input {
+    margin:10px 20px;
+}
