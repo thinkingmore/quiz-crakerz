@@ -6,6 +6,8 @@ import Qjavascript from './components/Quiz/Qjavascript/Qjavascript';
 import Qcss from './components/Quiz/Qcss/Qcss';
 import Qgit from './components/Quiz/Qgit/Qgit';
 import Qrct from './components/Quiz/Qrct/Qrct';
+import Blogs from './components/Blogs/Blogs';
+import NotFound from './components/notFound';
 
 
 function App() {
@@ -19,6 +21,10 @@ function App() {
         path:'/',
         loader: () => fetch('https://openapi.programming-hero.com/api/quiz'),
         element:<Home></Home>
+        },
+        {
+          path:'blogs',
+          element:<Blogs></Blogs>   
         },
         {
           path:'React',
@@ -39,6 +45,11 @@ function App() {
           path: 'git',
           loader: () => fetch('https://openapi.programming-hero.com/api/quiz/5'),
           element: <Qgit></Qgit>
+        },
+        {
+          path: '*',
+          element: <NotFound></NotFound>
+        
         }
           
       ]  
