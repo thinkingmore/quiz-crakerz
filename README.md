@@ -2,6 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# Live site link: https://skill-test-quiz.netlify.app/
+
 # Description
 
 This web application was built with react.It features some quizes on html,css,javascript and react.There are total three navigational link that can be found in the header.The home page shows a banner with react-typewriter effect.The quizes based on different topic can be found bel
