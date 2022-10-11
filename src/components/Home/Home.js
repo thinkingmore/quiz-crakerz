@@ -27,8 +27,7 @@ const Home = () => {
                     </Quizes>
                     )
                 }
-         </div>
-         <Stats></Stats>
+            </div>
         </div>
         
     );

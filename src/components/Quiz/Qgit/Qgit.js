@@ -7,7 +7,7 @@ const Qgit = () => {
     console.log(quiz);
     return (  
         <div>
-            <h2>This is git</h2>
+            <h2>This is git quiz</h2>
             {
                 quiz.data.questions.map(qs => <Quiz
                 key={qs.id}

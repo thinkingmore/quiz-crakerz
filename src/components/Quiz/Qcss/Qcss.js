@@ -7,7 +7,7 @@ const Qcss = () => {
     console.log(quiz);
     return (
         <div>
-            <h3>This is css</h3>
+            <h3>This is CSS quiz</h3>
             {
                 quiz.data.questions.map(qs => <Quiz
                 key={qs.id}

@@ -7,12 +7,11 @@ const Quizes = (quize) => {
     return (       
         <div className="card">
             <img src={logo} alt='logo'></img>
-            <h2>This Quizes:{name}</h2>
+            <h2>Take the quiz on:{name}</h2>
             <p>Quize:{id}</p>
-            <p>Total quizes:{total}</p>
-            <button className="card-btn">
-                {<Link to={`${name}`}>{name}</Link>}
-            </button>
+            <p>Total quizes:{total}</p>          
+            {<Link to={`${name}`}><button className="card-btn">{name}</button></Link>}
+            
         </div>         
     );
 };

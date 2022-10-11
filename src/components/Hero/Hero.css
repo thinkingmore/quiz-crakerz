@@ -10,6 +10,16 @@
     font-size: 5rem;
 }
 
+@media only screen and (max-width: 768px) {
+    .hero{
+        padding:40px;
+    }
+    .typewriter {
+         font-size: 2rem;
+    }
+   }
+
+
 @media only screen and (max-width: 600px) {
     .typewriter {
          font-size: 1.5rem;
