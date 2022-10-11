@@ -13,8 +13,11 @@ const Quiz = (qs) => {
                 <br />
                 <input type="radio" name="quizAnswer"/>{options[2]}
                 <br />
-                <input type="radio" name="quizAnswer"/>{options[3]}
+                <input type="radio" name="quizAnswer"/>{options[3] }
                 <br />
+                <button className='ans-submit-btn' type="button" onclick="displayRadioValue()">
+                    Submit
+                </button>
             </section>
                 
                           
