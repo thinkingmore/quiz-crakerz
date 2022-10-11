@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { BarChart, Bar,XAxis, YAxis, Tooltip} from 'recharts';
+import './Stats.css';
 
 const Stats = () => {
     const [total,setTotal] = useState();
@@ -24,7 +25,7 @@ const Stats = () => {
     return (  
         <div> 
             <h3>See the details of quiz data</h3>
-            <div style={{marginTop:'5%', width:'80%', marginLeft:'30%'}}>
+            <div className='chart-container'>
                 <BarChart width={500} height={400} data={total}>
                     <Bar dataKey="total" fill="#8884d8" />
                     <XAxis dataKey="name"/>
