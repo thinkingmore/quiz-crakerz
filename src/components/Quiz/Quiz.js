@@ -21,11 +21,15 @@ const Quiz = (qs) => {
     }
    }
 
+   const showAnswer = () => {
+      toast(correct);
+   }
+
    
     return (
         <div>
             <section className='quiz'>
-                <h3>{question}<span className='ans-icon'><FontAwesomeIcon icon={faBook}></FontAwesomeIcon></span></h3> 
+                <h3>{question}<span onClick={()=>showAnswer()} className='ans-icon'><FontAwesomeIcon icon={faBook}></FontAwesomeIcon></span></h3> 
                 <input type="radio" onChange={e=> setAnswer(e.target.value)} value={options[0]} name="quizAnswer"/>{options[0]}
                 <br />
                 <input type="radio" value={options[1]} onChange={e=> setAnswer(e.target.value)} name="quizAnswer"/>{options[1]}
