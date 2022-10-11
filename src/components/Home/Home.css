@@ -1,0 +1,7 @@
+.quize-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin:20px;
+    padding: 10px;
+    grid-gap: 15px;
+}
