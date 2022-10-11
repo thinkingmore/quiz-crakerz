@@ -1,6 +1,8 @@
 import { faBook, faEye, faLockOpen } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './Quiz.css';
 
 const Quiz = (qs) => {
@@ -9,10 +11,13 @@ const Quiz = (qs) => {
    
     const checkAnswer = () => {
     if(answer === correct){    
-        alert("Correct")
+        toast("Correct")
+    }
+    else if (answer === undefined) {
+        alert("please select an answer")
     }
     else{
-        alert("Incorrect")
+        toast("Incorrect")
     }
    }
 
@@ -33,8 +38,7 @@ const Quiz = (qs) => {
                     Submit
                 </button>
             </section>
-                
-                          
+            <ToastContainer />                           
         </div>
     );
 };
