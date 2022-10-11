@@ -2,6 +2,15 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# Description
+
+This web application was built with react.It features some quizes on html,css,javascript and react.There are total three navigational link that can be found in the header.The home page shows a banner with react-typewriter effect.The quizes based on different topic can be found bel
+ow the banner.
+
+By clicking on the quiz button users can take the quize.When they click the submit button.A toast shows up in the top right corner.It shows whether the selected answe is correct or not.The options are shown using the radio input options.There exists an icon next to every questions by click on that a user can show the correct answer inside the toast just like clicking on the submit button.
+
+The statistics page was made for data visualization.It mainly shows two data for topics of quiz and total number of quizes on each topics.The site was made responsive for mobile devices and tablet.
+
 ## Available Scripts
 
 In the project directory, you can run:
